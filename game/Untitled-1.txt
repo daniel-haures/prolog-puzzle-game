@@ -1,0 +1,31 @@
+/*Array interi, el leader (maggiari di tutti i numeri alla loro destra)*/
+/* [7,6,5,4,3] [4,5,3,7,5] */
+
+public static void main (String args[]){
+
+    int[] array = [4,5,3,7,5]
+    int last_el= array[array.size()-1]
+    for (int i=array.size()-1,i>=0,i--)
+
+}
+
+/* stringa */
+
+/* ana | anna */
+
+public Boolean isPalindrome(String to_check){
+
+
+    for (int i=0, i<to_check.size()/2, i++){
+        
+        if(!to_check[i].equals(to_check[to_check.size()-1-i])){
+            return false;
+        }
+
+    }
+
+    return true;
+
+}
+
+
