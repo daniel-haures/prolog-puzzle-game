@@ -1,5 +1,5 @@
 
-%['ice-domain.pl','sort.pl','actions.pl','score_classic.pl','a-star.pl'].
+%['domain/ice-domain.pl','domain/sort.pl','domain/actions.pl','domain/score.pl','algo/a-star.pl','algo/itdeepening.pl'].
 
 rows(8).
 collumns(8).

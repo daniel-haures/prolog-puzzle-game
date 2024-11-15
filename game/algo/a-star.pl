@@ -33,7 +33,7 @@ astar([[S,Path,_,_]|_],_,Path):-end(S) , !.
 %    predicate astar should be checked on them.
 astar([[S,Path,ScoreG,ScoreH]|Tail],Visited,Result):-
     \+member(S,Visited),!, 
-    findall(Az,applicabile(Az,S),AzList), % Find possibile actions that can be applied to actual state.
+    findall(Az,applicable(Az,S),AzList), % Find possibile actions that can be applied to actual state.
     generateNewState([S,Path,ScoreG,ScoreH],AzList,NewState), % Generate the reacheable state
     addNewState(NewState,Tail,NewTail), % Add the new state to the list of states not visited yet. Avoiding duplicates.
     astar(NewTail,[S|Visited],Result). % Check the existence of final state in the previous list.
