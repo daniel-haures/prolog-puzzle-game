@@ -73,7 +73,7 @@ distance([right|AzList],pos(MyX,MyY),pos(Row,EndY),[pos(Row,ShiftY)|TailShifted]
 
 distance([right|AzList],pos(MyX,MyY),pos(Row,EndY),[pos(Row,ShiftY)|TailShifted],[Diff|DifferenceTail]):- 
     MissedLeft is abs(EndY-MyY),
-    MissedRight is abs(ShiftY-My),
+    MissedRight is abs(ShiftY-MyY),
     Diff is min(MissedLeft,MissedRight)+abs(MyX-Row),
     distance(AzList,pos(MyX,MyY),pos(Row,EndY),TailShifted,DifferenceTail).
 

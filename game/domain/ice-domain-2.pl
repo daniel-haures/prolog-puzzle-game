@@ -4,10 +4,10 @@ rows(8).
 collumns(8).
 
 % S = [pos monster, have the hammer, gem1, gem2, gem3]
-start([pos(4,4),0,pos(1,8),pos(5,5),pos(8,2),[]]).
-end([pos(7,1),_,_,_,_,_]).
+start([pos(7,8),0,pos(1,8),pos(5,5),pos(8,2),[]]).
+end([pos(3,2),_,_,_,_,_]).
 
-portal(pos(7,1)).
+portal(pos(3,2)).
 hammer(pos(1,2)).
 
 occupied(pos(1,1)).
