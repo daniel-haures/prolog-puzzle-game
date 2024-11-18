@@ -5,13 +5,15 @@ start(pos(1,3)).
 end(pos(21,21)).
 %end(pos(14,21)).
 
+occupata(pos(1,1)).
 occupata(pos(1,4)).
 occupata(pos(1,8)).
 occupata(pos(1,6)).
 occupata(pos(1,2)).
-occupata(pos(1,6)).
 occupata(pos(1,12)).
-occupata(pos(1,1)).
+occupata(pos(1,11)).
+occupata(pos(1,15)).
+occupata(pos(1,18)).
 occupata(pos(2,20)).
 occupata(pos(2,16)).
 occupata(pos(2,4)).
@@ -201,9 +203,6 @@ occupata(pos(21,12)).
 occupata(pos(21,1)).
 occupata(pos(21,4)).
 occupata(pos(21,10)).
-occupata(pos(1,11)).
-occupata(pos(1,15)).
-occupata(pos(1,18)).
 occupata(pos(4,2)).
 occupata(pos(4,5)).
 occupata(pos(4,16)).
@@ -237,3 +236,29 @@ occupata(pos(19,19)).
 occupata(pos(20,7)).
 occupata(pos(20,11)).
 occupata(pos(21,9)).
+
+
+ %%     1 2 3 4 5 6 7 8 9 101112131415161718192021
+ %%   +-------------------------------------------+
+ %% 1 | x x . x . x . x . . x x . . x . . x . . . |
+ %% 2 | . x . x . . . . x . . x . . . x . . . x . |
+ %% 3 | . . . . . x x . . x . . x x x x . x x . . |
+ %% 4 | . x x . x x x x . . x . . . . x x . . . x |
+ %% 5 | . x . . x . . x x x x x . x . . x . x x . |
+ %% 6 | . . . x . x x x . . . x . . . x . . x x x |
+ %% 7 | . x x . . x x . . x x . x x . . . . . x . |
+ %% 8 | . . . x . x . x . x x . . . x x . x . x . |
+ %% 9 | . x . . . . x . . . x . x . . . . x x x x |
+ %% 10| . x x x x . x . x . . . . x . x . . . . . |
+ %% 11| . x x . x . . . . . x . x x x . . x x x . |
+ %% 12| x . . . x x . x x . x . x x x x x . . . . |
+ %% 13| x x x . x . . . . . x . x x . . x x . x . |
+ %% 14| x . x . x . x . x x x . . . x . x x x . . |
+ %% 15| . . . . . . x . x x . x . x . x x . . . x |
+ %% 16| . x x . x . x . x x . . . . x x . . x x . |
+ %% 17| . . x x . . x x . . . x x . . . . x x x x |
+ %% 18| x . . . . x x . x . x . . . x x . . x x x |
+ %% 19| x x . x . . . . x . . x . x x x x . x x . |
+ %% 20| x x . x x x x . . . x x . x . x . . . . x |
+ %% 21| x x . x . . . . x x x x . . . . . x x . . |
+ %%   +-------------------------------------------+
