@@ -1,4 +1,3 @@
-
 %['algo/a-star.pl','algo/itdeepening.pl','domain/actions.pl','domain/easy-domain-10-10.pl'].
 
 % Define the required conditions to apply move.
