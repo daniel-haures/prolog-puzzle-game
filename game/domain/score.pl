@@ -6,7 +6,7 @@ Step 2) For each direction a value is computed ->
 Step 3) The first part of the heuristic is defined by sum of distance from the actual position to each segment.
 Step 4) The second part is defined by the proximity of gems
 */
-score([pos(MyX,MyY),Hammer,G1,G2,G3,Ice],OldScore,OldScore+1,ScoreH):-
+score([pos(MyX,MyY),Hammer,G1,G2,G3,Ice],OldScore,OldScore+5,ScoreH):-
     portal(pos(EndX,EndY)),
 
     
