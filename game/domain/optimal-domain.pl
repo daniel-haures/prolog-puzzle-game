@@ -1,4 +1,4 @@
-%['domain/imposible-domain.pl','domain/sort.pl','domain/actions.pl','domain/score.pl','algo/a-star.pl','algo/itdeepening.pl'].
+%['domain/optimal-domain.pl','domain/sort.pl','domain/actions.pl','domain/score.pl','algo/a-star.pl','algo/itdeepening.pl'].
 
 rows(8).
 collumns(8).

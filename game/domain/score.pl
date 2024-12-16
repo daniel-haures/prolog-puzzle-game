@@ -44,7 +44,7 @@ project(Pos,[Az|ListAz],Ice,Gems,[End|ListEnd]):-
 
 distance([],_,_,[],[]).
 distance([up|AzList],pos(MyX,MyY),pos(EndX,Collumn),[pos(ShiftX,Collumn)|TailShifted],[Diff|DifferenceTail]):-
-    MyX>=EndX,MyX=<ShiftX,
+    MyX=<EndX,MyX>=ShiftX,!,
     Diff is abs(MyY-Collumn),
     distance(AzList,pos(MyX,MyY),pos(EndX,Collumn),TailShifted,DifferenceTail).
 distance([up|AzList],pos(MyX,MyY),pos(EndX,Collumn),[pos(ShiftX,Collumn)|TailShifted],[Diff|DifferenceTail]):-
@@ -55,7 +55,7 @@ distance([up|AzList],pos(MyX,MyY),pos(EndX,Collumn),[pos(ShiftX,Collumn)|TailShi
 
 
 distance([down|AzList],pos(MyX,MyY),pos(EndX,Collumn),[pos(ShiftX,Collumn)|TailShifted],[Diff|DifferenceTail]):-
-    MyX=<EndX , MyX>=ShiftX,
+    MyX>=EndX , MyX=<ShiftX,!,
     Diff is abs(MyY - Collumn),
     distance(AzList,pos(MyX,MyY),pos(EndX,Collumn),TailShifted,DifferenceTail).
 
